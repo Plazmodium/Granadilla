@@ -14,6 +14,7 @@
 		2CC73037218F0FCC002D58E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CC73035218F0FCC002D58E9 /* LaunchScreen.storyboard */; };
 		2CC73042218F0FCC002D58E9 /* GranadillaAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC73041218F0FCC002D58E9 /* GranadillaAssessmentTests.swift */; };
 		2CC7304D218F0FCC002D58E9 /* GranadillaAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7304C218F0FCC002D58E9 /* GranadillaAssessmentUITests.swift */; };
+		2CC7305C218F3378002D58E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC7305B218F3378002D58E9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2CC73048218F0FCC002D58E9 /* GranadillaAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GranadillaAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC7304C218F0FCC002D58E9 /* GranadillaAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GranadillaAssessmentUITests.swift; sourceTree = "<group>"; };
 		2CC7304E218F0FCC002D58E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC7305B218F3378002D58E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC7305C218F3378002D58E9 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				2CC73040218F0FCC002D58E9 /* GranadillaAssessmentTests */,
 				2CC7304B218F0FCC002D58E9 /* GranadillaAssessmentUITests */,
 				2CC7302A218F0FCA002D58E9 /* Products */,
+				2CC7305A218F3378002D58E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				2CC7304E218F0FCC002D58E9 /* Info.plist */,
 			);
 			path = GranadillaAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		2CC7305A218F3378002D58E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CC7305B218F3378002D58E9 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +205,11 @@
 				TargetAttributes = {
 					2CC73028218F0FCA002D58E9 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2CC7303C218F0FCC002D58E9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -435,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNHBJ3JE68;
 				INFOPLIST_FILE = GranadillaAssessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JNHBJ3JE68;
 				INFOPLIST_FILE = GranadillaAssessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

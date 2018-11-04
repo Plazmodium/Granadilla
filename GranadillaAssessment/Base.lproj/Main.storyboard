@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,108 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GranadillaAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dv-bu-O9P">
+                                <rect key="frame" x="16" y="523" width="343" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.064558162069999994" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="17"/>
+                                <state key="normal" title="Change Background Colour">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3r-Pe-c5s">
+                                <rect key="frame" x="16" y="567" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.24102908370000001" green="0.90431560586809812" blue="0.37260285619447858" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtD-VW-mA5">
+                                <rect key="frame" x="16" y="611" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.2784313725" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="17"/>
+                                <state key="normal" title="Draw Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkd-25-Frx">
+                                <rect key="frame" x="16" y="299" width="343" height="216"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Integer 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAQ-ie-QkY">
+                                <rect key="frame" x="16" y="185" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Integer 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykj-vx-dZv">
+                                <rect key="frame" x="16" y="223" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-vD-2Mp">
+                                <rect key="frame" x="16" y="261" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bwp-tR-IHs">
+                                <rect key="frame" x="16" y="20" width="343" height="157"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dRd-K5-D0N"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CtD-VW-mA5" firstAttribute="top" secondItem="M3r-Pe-c5s" secondAttribute="bottom" constant="8" id="1Tz-aw-KNV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M3r-Pe-c5s" secondAttribute="trailing" constant="16" id="1xW-er-0P2"/>
+                            <constraint firstItem="2Dv-bu-O9P" firstAttribute="top" secondItem="qkd-25-Frx" secondAttribute="bottom" constant="8" id="2MW-ey-oKO"/>
+                            <constraint firstItem="ykj-vx-dZv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5nD-eD-e2T"/>
+                            <constraint firstItem="M3r-Pe-c5s" firstAttribute="top" secondItem="2Dv-bu-O9P" secondAttribute="bottom" constant="8" id="7TW-AW-x0E"/>
+                            <constraint firstItem="qkd-25-Frx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7hy-gg-aqh"/>
+                            <constraint firstItem="bwp-tR-IHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DHg-tF-3tU"/>
+                            <constraint firstItem="alJ-vD-2Mp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H0e-Jy-zcw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwp-tR-IHs" secondAttribute="trailing" constant="16" id="HZM-jK-b1U"/>
+                            <constraint firstItem="ykj-vx-dZv" firstAttribute="top" secondItem="pAQ-ie-QkY" secondAttribute="bottom" constant="8" id="JXp-Ai-KfW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CtD-VW-mA5" secondAttribute="trailing" constant="16" id="LHy-3j-sut"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkd-25-Frx" secondAttribute="trailing" constant="16" id="R15-qE-XPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pAQ-ie-QkY" secondAttribute="trailing" constant="16" id="SXk-xX-lT0"/>
+                            <constraint firstItem="pAQ-ie-QkY" firstAttribute="top" secondItem="bwp-tR-IHs" secondAttribute="bottom" constant="8" id="ULN-vn-cP9"/>
+                            <constraint firstItem="M3r-Pe-c5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YH6-fe-qxm"/>
+                            <constraint firstItem="CtD-VW-mA5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ycq-A6-HmX"/>
+                            <constraint firstItem="alJ-vD-2Mp" firstAttribute="top" secondItem="ykj-vx-dZv" secondAttribute="bottom" constant="8" id="dYM-Bb-bjg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CtD-VW-mA5" secondAttribute="bottom" constant="20" id="gNJ-yT-GSD"/>
+                            <constraint firstItem="pAQ-ie-QkY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gtN-1c-dsE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="alJ-vD-2Mp" secondAttribute="trailing" constant="16" id="iai-MZ-HY1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ykj-vx-dZv" secondAttribute="trailing" constant="16" id="mpY-h2-Hzp"/>
+                            <constraint firstItem="qkd-25-Frx" firstAttribute="top" secondItem="alJ-vD-2Mp" secondAttribute="bottom" constant="8" id="oX7-UT-gr2"/>
+                            <constraint firstItem="bwp-tR-IHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sDK-ur-O5N"/>
+                            <constraint firstItem="2Dv-bu-O9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tiC-WJ-32A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Dv-bu-O9P" secondAttribute="trailing" constant="16" id="zlN-Ic-YF8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="answerTXT" destination="alJ-vD-2Mp" id="7hY-YS-FLN"/>
+                        <outlet property="colourBTN" destination="2Dv-bu-O9P" id="mW1-at-jvy"/>
+                        <outlet property="integer1TXT" destination="pAQ-ie-QkY" id="S3t-Ba-2oJ"/>
+                        <outlet property="integer2TXT" destination="ykj-vx-dZv" id="Gr9-Ii-4G7"/>
+                        <outlet property="mapBTN" destination="CtD-VW-mA5" id="0DR-uN-Ok6"/>
+                        <outlet property="mapView" destination="bwp-tR-IHs" id="E7C-HH-FKO"/>
+                        <outlet property="mathBTN" destination="M3r-Pe-c5s" id="64T-8R-6R4"/>
+                        <outlet property="operationPickerView" destination="qkd-25-Frx" id="YF7-u9-ABB"/>
+                        <outlet property="rootView" destination="8bC-Xf-vdC" id="ug6-i0-I7K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
